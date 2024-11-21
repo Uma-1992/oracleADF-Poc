@@ -12,7 +12,7 @@ xmlns:f="http://java.sun.com/jsf/core">
     <f:facet name="menus"/>
     <f:facet name="toolbar"/>
     <f:facet name="statusbar"/>
-    <af:table var="emp" summary="Employee Details Table" id="t1" emptyText="No Data Desplay" partialTriggers=":b1"
+    <af:table var="emp" summary="Employee Table Details" id="t1" emptyText="No Data Desplay" partialTriggers=":b1"
               value="#{pageFlowScope.employeebean.empTableBean}">
       <af:column sortable="false" rowHeader="true" headerText="Employee Id" id="c1">
         <af:outputText value="#{emp.empId}" id="ot1"/>
