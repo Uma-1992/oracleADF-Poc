@@ -14,19 +14,19 @@ xmlns:f="http://java.sun.com/jsf/core">
     <f:facet name="statusbar"/>
     <af:table var="emp" summary="Employee Details Table" id="t1" emptyText="No Data Desplay" partialTriggers=":b1"
               value="#{pageFlowScope.employeebean.empTableBean}">
-      <af:column sortable="false" rowHeader="true" headerText="empId" id="c1">
+      <af:column sortable="false" rowHeader="true" headerText="Employee Id" id="c1">
         <af:outputText value="#{emp.empId}" id="ot1"/>
       </af:column>
-      <af:column sortable="false" rowHeader="true" headerText="fname" id="c2">
+      <af:column sortable="false" rowHeader="true" headerText="First Name" id="c2">
         <af:outputText value="#{emp.fname}" id="ot2"/>
       </af:column>
-      <af:column sortable="false" rowHeader="true" headerText="lname" id="c3">
+      <af:column sortable="false" rowHeader="true" headerText="Last Name" id="c3">
         <af:outputText value="#{emp.lname}" id="ot3"/>
       </af:column>
-      <af:column sortable="false" rowHeader="true" headerText="salary" id="c4">
+      <af:column sortable="false" rowHeader="true" headerText="Salary" id="c4">
         <af:outputText value="#{emp.salary}" id="ot4"/>
       </af:column>
-      <af:column sortable="false" rowHeader="true" headerText="email" id="c5">
+      <af:column sortable="false" rowHeader="true" headerText="Email" id="c5">
         <af:outputText value="#{emp.email}" id="ot5"/>
       </af:column>
     </af:table>
