@@ -6,5 +6,11 @@
     <variableIterator id="variables"/>
     <iterator id="EmployeesView1Iterator" Binds="EmployeesView1" DataControl="AppModuleDataControl" RangeSize="25"/>
   </executables>
-  <bindings/>
+  <bindings>
+    <attributeValues IterBinding="EmployeesView1Iterator" id="ManagerId">
+      <AttrNames>
+        <Item Value="ManagerId"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
 </pageDefinition>
