@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AppModule"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <ViewUsage
+    Name="DepartmentsView"
+    ViewObjectName="model.vo.DepartmentsView"/>
+  <ViewUsage
+    Name="EmployeesView"
+    ViewObjectName="model.vo.EmployeesView"/>
+  <ViewLinkUsage
+    Name="EmpDeptFkLink1"
+    ViewLinkObjectName="model.vo.EmpDeptFkLink"
+    SrcViewUsageName="model.eo.AppModule.DepartmentsView"
+    DstViewUsageName="model.eo.AppModule.EmployeesView"
+    Reversed="false"/>
+</AppModule>
