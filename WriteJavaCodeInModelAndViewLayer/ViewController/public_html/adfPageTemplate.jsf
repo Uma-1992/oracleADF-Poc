@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<af:pageTemplateDef xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" definition="private"
+                    xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component" xmlns:f="http://java.sun.com/jsf/core">
+    <af:xmlContent>
+        <afc:component>
+            <afc:description/>
+            <afc:display-name>adfPageTemplate</afc:display-name>
+            <afc:facet>
+                <afc:facet-name>body</afc:facet-name>
+            </afc:facet>
+        </afc:component>
+    </af:xmlContent>
+    <af:panelSplitter orientation="vertical" splitterPosition="120" id="pt_ps1">
+        <f:facet name="first">
+            <af:panelGridLayout id="pt_pgl1">
+                <af:gridRow marginTop="5px" height="auto" id="pt_gr1">
+                    <af:gridCell marginStart="5px" width="34%" id="pt_gc1">
+                        <af:image id="pt_i1" source="/images/png/orc.png"/>
+                    </af:gridCell>
+                    <af:gridCell marginStart="5px" width="33%" id="pt_gc2">
+                        <af:outputText value="My System Name" id="pt_ot1"
+                                       inlineStyle="color:#730073; font-size:x-large;"/>
+                    </af:gridCell>
+                    <af:gridCell marginStart="5px" width="33%" marginEnd="5px" id="pt_gc3">
+                        <af:panelGroupLayout id="pt_pgl2" layout="horizontal">
+                            <af:outputText value="My name" id="pt_ot2"/>
+                            <af:spacer width="10" height="10" id="pt_s1"/>
+                            <af:link text="Logout" id="pt_l1"/>
+                        </af:panelGroupLayout>
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="pt_gr2">
+                    <af:gridCell marginStart="5px" columnSpan="3" marginEnd="5px" id="pt_gc4">
+                        <af:menuBar id="pt_mb1">
+                            <af:menu text="menu 1" id="pt_m1">
+                                <af:commandMenuItem text="commandMenuItem 1" id="pt_cmi1"/>
+                                <af:commandMenuItem text="commandMenuItem 4" id="pt_cmi4"/>
+                            </af:menu>
+                            <af:menu text="menu 2" id="pt_m2">
+                                <af:commandMenuItem text="commandMenuItem 2" id="pt_cmi2"/>
+                                <af:commandMenuItem text="commandMenuItem 3" id="pt_cmi3"/>
+                            </af:menu>
+                            <af:menu text="menu 3" id="pt_m3">
+                                <af:commandMenuItem text="commandMenuItem 5" id="pt_cmi5"/>
+                                <af:commandMenuItem text="commandMenuItem 6" id="pt_cmi6"/>
+                            </af:menu>
+                            <af:commandMenuItem text="commandMenuItem 7" id="pt_cmi7"/>
+                            <af:commandMenuItem text="commandMenuItem 8" id="pt_cmi8"/>
+                        </af:menuBar>
+                    </af:gridCell>
+                </af:gridRow>
+            </af:panelGridLayout>
+        </f:facet>
+        <f:facet name="second">
+            <af:decorativeBox id="pt_db1">
+                <f:facet name="top"/>
+                <f:facet name="center">
+                    <af:facetRef facetName="body"/>
+                </f:facet>
+            </af:decorativeBox>
+        </f:facet>
+    </af:panelSplitter>
+</af:pageTemplateDef>

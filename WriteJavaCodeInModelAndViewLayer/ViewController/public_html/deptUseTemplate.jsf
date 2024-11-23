@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="deptUseTemplate.jsf" id="d1">
+        <af:messages id="m1"/>
+        <af:form id="f1">
+            <af:pageTemplate viewId="/adfPageTemplate.jsf" id="pt1">
+                <f:facet name="body">
+                    <af:panelCollection id="pc1">
+                        <f:facet name="menus"/>
+                        <f:facet name="toolbar"/>
+                        <f:facet name="statusbar"/>
+                        <af:table value="#{bindings.DepartmentsView.collectionModel}" var="row"
+                                  rows="#{bindings.DepartmentsView.rangeSize}"
+                                  emptyText="#{bindings.DepartmentsView.viewable ? 'No data to display.' : 'Access Denied.'}"
+                                  rowBandingInterval="0"
+                                  selectedRowKeys="#{bindings.DepartmentsView.collectionModel.selectedRow}"
+                                  selectionListener="#{bindings.DepartmentsView.collectionModel.makeCurrent}"
+                                  rowSelection="single" fetchSize="#{bindings.DepartmentsView.rangeSize}"
+                                  filterModel="#{bindings.DepartmentsViewQuery.queryDescriptor}" filterVisible="true"
+                                  queryListener="#{bindings.DepartmentsViewQuery.processQuery}" varStatus="vs" id="t1">
+                            <af:column sortProperty="#{bindings.DepartmentsView.hints.DepartmentId.name}"
+                                       filterable="true" sortable="true"
+                                       headerText="#{bindings.DepartmentsView.hints.DepartmentId.label}" id="c1">
+                                <af:outputText value="#{row.DepartmentId}"
+                                               shortDesc="#{bindings.DepartmentsView.hints.DepartmentId.tooltip}"
+                                               id="ot1">
+                                    <af:convertNumber groupingUsed="false"
+                                                      pattern="#{bindings.DepartmentsView.hints.DepartmentId.format}"/>
+                                </af:outputText>
+                            </af:column>
+                            <af:column sortProperty="#{bindings.DepartmentsView.hints.DepartmentName.name}"
+                                       filterable="true" sortable="true"
+                                       headerText="#{bindings.DepartmentsView.hints.DepartmentName.label}" id="c2">
+                                <af:outputText value="#{row.DepartmentName}"
+                                               shortDesc="#{bindings.DepartmentsView.hints.DepartmentName.tooltip}"
+                                               id="ot2"/>
+                            </af:column>
+                            <af:column sortProperty="#{bindings.DepartmentsView.hints.ManagerId.name}" filterable="true"
+                                       sortable="true" headerText="#{bindings.DepartmentsView.hints.ManagerId.label}"
+                                       id="c3">
+                                <af:outputText value="#{row.ManagerId}"
+                                               shortDesc="#{bindings.DepartmentsView.hints.ManagerId.tooltip}" id="ot3">
+                                    <af:convertNumber groupingUsed="false"
+                                                      pattern="#{bindings.DepartmentsView.hints.ManagerId.format}"/>
+                                </af:outputText>
+                            </af:column>
+                            <af:column sortProperty="#{bindings.DepartmentsView.hints.LocationId.name}"
+                                       filterable="true" sortable="true"
+                                       headerText="#{bindings.DepartmentsView.hints.LocationId.label}" id="c4">
+                                <af:outputText value="#{row.LocationId}"
+                                               shortDesc="#{bindings.DepartmentsView.hints.LocationId.tooltip}"
+                                               id="ot4">
+                                    <af:convertNumber groupingUsed="false"
+                                                      pattern="#{bindings.DepartmentsView.hints.LocationId.format}"/>
+                                </af:outputText>
+                            </af:column>
+                        </af:table>
+                    </af:panelCollection>
+                </f:facet>
+            </af:pageTemplate>
+        </af:form>
+    </af:document>
+</f:view>
