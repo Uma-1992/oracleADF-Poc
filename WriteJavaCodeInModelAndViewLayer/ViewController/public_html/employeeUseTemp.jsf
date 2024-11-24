@@ -112,7 +112,9 @@
                         </af:table>
                     </af:panelCollection>
                 </f:facet>
-                <f:facet name="title"/>
+                <f:facet name="title">
+                 <af:outputText value="After logout desplay some text" id="ot12"/>
+                </f:facet>
                 <f:attribute name="splitterPosition" value="100"/>
             </af:pageTemplate>
         </af:form>
