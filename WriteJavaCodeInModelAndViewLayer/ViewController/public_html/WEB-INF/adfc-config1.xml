@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <view id="deptUseTemplate">
+    <page>/deptUseTemplate.jsf</page>
+  </view>
+  <view id="employeeUseTemp">
+    <page>/employeeUseTemp.jsf</page>
+  </view>
+  <control-flow-rule id="__1">
+    <from-activity-id>deptUseTemplate</from-activity-id>
+    <control-flow-case id="__2">
+      <from-outcome>gotoemp</from-outcome>
+      <to-activity-id>employeeUseTemp</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__3">
+    <from-activity-id>employeeUseTemp</from-activity-id>
+    <control-flow-case id="__4">
+      <from-outcome>backtodep</from-outcome>
+      <to-activity-id>deptUseTemplate</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+</adfc-config>

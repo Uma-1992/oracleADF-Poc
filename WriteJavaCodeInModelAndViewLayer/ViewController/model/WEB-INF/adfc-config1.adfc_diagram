@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View2">
+      <property
+         name="activityId">deptUseTemplate</property>
+      <property
+         name="x">441.3584</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>deptUseTemplate&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">289.79883</property>
+      <property
+         name="page">/deptUseTemplate.jsf</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <View
+      id="View3">
+      <property
+         name="activityId">employeeUseTemp</property>
+      <property
+         name="x">968.02246</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>employeeUseTemp&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">322.79883</property>
+      <property
+         name="page">/employeeUseTemp.jsf</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase4"
+      from="View2"
+      to="View3">
+      <property
+         name="fromOutcome">gotoemp</property>
+      <property
+         name="sdm:polyPoints">R50,482.3584,289.44824,927.02246,322.44824,L50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase5"
+      from="View3"
+      to="View2">
+      <property
+         name="fromOutcome">backtodep</property>
+      <property
+         name="sdm:polyPoints">L54,926.763,325.94824,482.3584,292.94824,R54</property>
+   </ControlFlowCase>
+</SDM>

@@ -54,9 +54,9 @@
                                        disabled="#{!bindings.Delete.enabled}" id="b7"/>
                             <af:button text="Submit" id="b5"/>
                             <af:button actionListener="#{bindings.Commit.execute}" text="Commit"
-                                       disabled="#{!bindings.Commit.enabled}" id="b8"/>
+                                        id="b8"/>
                             <af:button actionListener="#{bindings.Rollback.execute}" text="Rollback"
-                                       disabled="#{!bindings.Rollback.enabled}" immediate="true" id="b9">
+                                       immediate="true" id="b9">
                                 <af:resetActionListener/>
                             </af:button>
                         </af:panelGroupLayout>

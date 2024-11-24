@@ -8,6 +8,22 @@
             <afc:facet>
                 <afc:facet-name>body</afc:facet-name>
             </afc:facet>
+            <afc:facet>
+                <afc:facet-name>
+                    title
+                </afc:facet-name>
+            </afc:facet>
+            <afc:attribute>
+                <afc:attribute-name>
+                    splitterPosition
+                </afc:attribute-name>
+                <afc:attribute-class>
+                    java.lang.Integer
+                </afc:attribute-class>
+                <afc:default-value>
+                    150
+                </afc:default-value>
+            </afc:attribute>
         </afc:component>
     </af:xmlContent>
     <af:panelSplitter orientation="vertical" splitterPosition="120" id="pt_ps1">
@@ -26,6 +42,8 @@
                             <af:outputText value="My name" id="pt_ot2"/>
                             <af:spacer width="10" height="10" id="pt_s1"/>
                             <af:link text="Logout" id="pt_l1"/>
+                            <af:spacer width="10" height="10" id="pt_s2"/>
+                            <af:facetRef facetName="title"/>
                         </af:panelGroupLayout>
                     </af:gridCell>
                 </af:gridRow>

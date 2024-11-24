@@ -19,6 +19,9 @@
                                   rowSelection="single" fetchSize="#{bindings.DepartmentsView.rangeSize}"
                                   filterModel="#{bindings.DepartmentsViewQuery.queryDescriptor}" filterVisible="true"
                                   queryListener="#{bindings.DepartmentsViewQuery.processQuery}" varStatus="vs" id="t1">
+                            <af:column id="c5">
+                                <af:button text="ViewEMployees" id="b1" action="gotoemp" />
+                            </af:column>
                             <af:column sortProperty="#{bindings.DepartmentsView.hints.DepartmentId.name}"
                                        filterable="true" sortable="true"
                                        headerText="#{bindings.DepartmentsView.hints.DepartmentId.label}" id="c1">
@@ -58,6 +61,10 @@
                         </af:table>
                     </af:panelCollection>
                 </f:facet>
+                <f:facet name="title">
+                    <af:outputText value="After logout desplay some text" id="ot5"/>
+                </f:facet>
+                <f:attribute name="splitterPosition" value="200"/>
             </af:pageTemplate>
         </af:form>
     </af:document>

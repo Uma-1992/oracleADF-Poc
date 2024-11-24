@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="windows-1252" ?>
-<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2"></adfc-config>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <metadata-resource id="__1">/WEB-INF/adfc-config1.xml</metadata-resource>
+</adfc-config>
