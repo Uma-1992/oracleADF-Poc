@@ -5,11 +5,13 @@
     <page path="/proggrammatic.jsf" usageId="view_proggrammaticPageDef"/>
     <page path="/deptUseTemplate.jsf" usageId="view_deptUseTemplatePageDef"/>
     <page path="/employeeUseTemp.jsf" usageId="view_employeeUseTempPageDef"/>
+    <page path="/uiComponents.jsf" usageId="view_uiComponentsPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_proggrammaticPageDef" path="view.pageDefs.proggrammaticPageDef"/>
     <page id="view_deptUseTemplatePageDef" path="view.pageDefs.deptUseTemplatePageDef"/>
     <page id="view_employeeUseTempPageDef" path="view.pageDefs.employeeUseTempPageDef"/>
+    <page id="view_uiComponentsPageDef" path="view.pageDefs.uiComponentsPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model.eo"
