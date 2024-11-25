@@ -12,7 +12,7 @@
                                 <f:facet name="first">
                                     <af:panelBox text="Departments" id="pb1" disclosed="true" showDisclosure="false" showMaximize="always">
                                         <f:facet name="toolbar">
-                                        <af:button id="b2" text="AddDepartment"/>
+                                        <af:button id="b2" text="AddDepartment" styleClass="btnaslink2"/>
                                         </f:facet>
                                         
                                         <af:table value="#{bindings.DepartmentsView.collectionModel}" var="row"
@@ -392,6 +392,14 @@
                                     </af:table>
                                 </af:panelGroupLayout>
                             </af:showDetail>
+                        </af:showDetailItem>
+                        <af:showDetailItem text="ADF UI Componenets" id="sdi3">
+                        <af:panelGroupLayout id="pgl8" layout="scroll" styleClass="AFStretchWidth">
+                           <af:media id="m2" source="/Amzur Uday.m4a" player="quicktime"/>
+                            <af:inlineFrame id="if1" source="/Venhanpassbook.pdf"/>
+                           <af:image id="i2" source="/images/products/aceboot.jpg"/>
+                            </af:panelGroupLayout>
+                     
                         </af:showDetailItem>
                     </af:panelTabbed>
                 </f:facet>

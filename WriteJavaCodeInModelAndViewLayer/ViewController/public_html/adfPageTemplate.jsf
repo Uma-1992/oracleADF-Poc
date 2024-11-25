@@ -70,7 +70,7 @@
             </af:panelGridLayout>
         </f:facet>
         <f:facet name="second">
-            <af:decorativeBox id="pt_db1">
+            <af:decorativeBox id="pt_db1" theme="dark">
                 <f:facet name="top"/>
                 <f:facet name="center">
                     <af:facetRef facetName="body"/>

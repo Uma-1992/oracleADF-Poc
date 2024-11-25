@@ -88,8 +88,8 @@ public class DepartmentsImpl extends EntityImpl {
      */
     public void setDepartmentName(String value) {
         setAttributeInternal(DEPARTMENTNAME, value);
-        System.out.println("New Department name is"+value);
-        this.setDepartmentId(1001);
+//        System.out.println("New Department name is"+value);
+//        this.setDepartmentId(1001);
     }
 
     /**
@@ -167,10 +167,10 @@ public class DepartmentsImpl extends EntityImpl {
      */
     protected void create(AttributeList attributeList) {
         super.create(attributeList);
-        System.out.println("After create row");
-        this.setDepartmentName("ISCON Devoties");
-        this.setManagerId(100);
-        this.setLocationId(1700);
+//        System.out.println("After create row");
+//        this.setDepartmentName("ISCON Devoties");
+//        this.setManagerId(100);
+//        this.setLocationId(1700);
     }
 
     /**

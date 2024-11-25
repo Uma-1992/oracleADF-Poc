@@ -1,0 +1,50 @@
+.AFDefaultFont:alias {
+    font-family: 'Times new Roman';
+    font-size: 'large';
+}
+
+af|column::column-header-cell {
+    color: Green;
+}
+
+af|table {
+    -tr-hover-highlight-row: false;
+}
+
+af|button.btnaslink2, af|button:text-only.btnaslink2 {
+    width: 120px;
+    height: 30px;
+    /*font-size:bold;*/
+
+    color: Navy;
+    background: url(/images/btsn.jpg)no-repeat;
+    border: 0;
+}
+
+af|button:hover:text-only.btnaslink2, af|button:active:text-only.btnaslink2, af|button:focus:hover::text-only.btnaslink2 {
+    width: 120px;
+    height: 30px;
+    font-family: Tahoma;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 4px 10px !important;
+    padding-bottom: 3px;
+    color: Red;
+    font-size: 11px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+af|table::data-row:selected:focused af|column::data-cell,
+af|table::data-row:selected:focused af|column::banded-data-cell,
+af|table::data-row:selected:inactive af|column::data-cell,
+af|table::data-row:selected:inactive af|column::banded-data-cell
+{
+    background-color:rgb(181,255,255);
+    color:black;
+    font-weight:bolder;
+    border-top:2px solid Black;
+    border-bottom:2px solid Black;
+    
+}
